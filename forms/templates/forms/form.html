@@ -10,7 +10,7 @@
 {% block body %}
 <div class = "container-fluid">
     <div class="form-topnav">
-        <a href = "/">
+        <a href = "/index/static">
             <img src = "{% static 'Icon/icon.png' %}" alt = "Google Forms Icon(CLONE)" class="navbar-icon form-icon" title = "Forms" />
         </a>
         <input class="nav-text nav-form-title edit-on-click input-form-title" value  = "{{form.title}}" type="text">
@@ -109,7 +109,7 @@
                 <label for="required-{{question.id}}" class="required">Required</label>
                 <div class="float-right">
                     <img src="{% static 'Icon/dustbin.png' %}" alt="Delete question icon" class="question-option-icon delete-question" title="Delete question"
-                    data-id="{{question.id}}">
+                         data-id="{{question.id}}">
                 </div>
             </div>
         </div>
